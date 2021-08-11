@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+
+$font-1: "Poppins", sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0.4rem auto;
+  max-width: 1296px;
+  font-family: $font-1;
+  color: black;
+  background-color: rgb(247, 239, 239);
+
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:visited {
+  color:black;
+}
