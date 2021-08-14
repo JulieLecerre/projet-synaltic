@@ -13,9 +13,6 @@ const Navigation = () => {
             <NavLink exact to="/resultats-precedents"activeClassName="nav-active">
                 Résultats précédents
             </NavLink>
-            <NavLink exact to="/historique-des-actions"activeClassName="nav-active">
-                Historique des actions
-            </NavLink>
             
         </div>
     );
