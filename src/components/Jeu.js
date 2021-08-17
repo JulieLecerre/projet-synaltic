@@ -46,25 +46,24 @@ class Jeu extends Component {     //on crée une classe Jeu qui hérite de la cl
     render() {
         return (
             <div>
-                <div className="styleBouton">
+                <div className= "boutons">
                     <Bouton texteBouton="Coder bien" fonction={this.coderBien}/>
                     <Bouton texteBouton="Coder vite" fonction={this.coderVite}/>
                     <Bouton texteBouton="Tester" fonction={this.tester}/>
                     <Bouton texteBouton="Recommencer" fonction={this.recommencer}/>
                 </div>
-                <div>
-                    Code Ok : {this.state.scoreOk} %
-                </div>
-                <div>
-                    Code Bug : {this.state.scoreBug} %
-                </div>
-                <div>
-                    Code PC : {this.state.scorePc} %
-                </div>
-                <div>
+                <div className="affichageResultat">
                     {this.state.affichageResultat}
                 </div>
-                <Graphique data={this.state.historiqueDesActions}/>
+                <div className="resultatsJeu">
+                    <div className="scores">
+                        <Score texte="Code OK" score={this.state.scoreOk} classNameNombre="codeOkNombre"/>
+                        <Score texte="Code Bug" score={this.state.scoreBug} classNameNombre="codeBugNombre"/>
+                        <Score texte="Code Pc" score={this.state.scorePc} classNameNombre="codePcNombre"/>
+                    </div>
+                    <Graphique data={this.state.historiqueDesActions}/>
+                </div>
+                
             </div>
     
         );

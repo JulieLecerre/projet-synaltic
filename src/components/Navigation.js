@@ -3,6 +3,8 @@ import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
     return (
+
+        
         <div className="navigation">
             <NavLink exact to="/accueil"activeClassName="nav-active">
                 Accueil
@@ -12,9 +14,9 @@ const Navigation = () => {
             </NavLink>
             <NavLink exact to="/resultats-precedents"activeClassName="nav-active">
                 Résultats précédents
-            </NavLink>
-            
+            </NavLink>    
         </div>
+        
     );
 };
 

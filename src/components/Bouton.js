@@ -3,7 +3,7 @@ import React from 'react';
 const Bouton = (props) => {
     return (
         <div>
-            <button onClick={props.fonction}>
+            <button className= "styleBouton" onClick={props.fonction}>
                 {props.texteBouton}
             </button>
         </div>

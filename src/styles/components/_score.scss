@@ -1,0 +1,30 @@
+.score {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.scoreTexte {
+    margin-right: 30px;
+    font-size: 30px;
+    color: rgb(87, 87, 87);
+    font-weight: bold;
+}
+
+.scoreNombre {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.codeOkNombre {
+    color: #21b65a; 
+}
+
+.codeBugNombre {
+    color: #c0392b; 
+}
+
+.codePcNombre {
+    color: #5a0deb;;
+}

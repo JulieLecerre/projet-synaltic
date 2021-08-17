@@ -11,19 +11,17 @@ const Graphique = (props) => {
     ];*/
 
     return (
-        <div>
             <div>
                 <LineChart width={730} height={250} data={props.data} margin={{ top: 5, right: 30, left: 20, bottom: 5}}>
                     <CartesianGrid strokeDasharray="3 3" />
                     <XAxis />
                     <Tooltip />
                     <Legend />
-                    <Line type="monotone" dataKey="scoreOk" stroke="#82ca9d" />
-                    <Line type="monotone" dataKey="scoreBug" stroke="#c0392b" />
-                    <Line type="monotone" dataKey="scorePc" stroke="#0000ff" />
+                    <Line type="monotone" dataKey="scoreOk" stroke="#21b65a" name="Code Ok"/>
+                    <Line type="monotone" dataKey="scoreBug" stroke="#c0392b" name="Code Bug"/>
+                    <Line type="monotone" dataKey="scorePc" stroke="#5a0deb" name="Code PC"/>
                 </LineChart>
             </div>
-        </div>
     );
 };
 

@@ -10,19 +10,32 @@ const Resultats = () => {
 
     return (
         <div>
-            <div>
-                {
-                    cookieJson.map((resultat)=> (
+            <div className= "resultatTableau">
+                <table className="resultatsPrecedentsTableau">
+                    <theader>
+                        <tr>
+                            <th class="resultatColonne">Date</th>
+                            <th class="resultatColonne">Score Ok</th>
+                            <th class="resultatColonne">Score Bug</th>
+                            <th class="resultatColonne">Score Pc</th>
+                            <th class="resultatColonne">Résultat</th>
+                        </tr>
+                    </theader>
+                    <tbody>
+                        {
+                            cookieJson.map((resultat)=> (
 
-                    <div>
-                        <span>{resultat.date}      </span>
-                        <span>{resultat.scoreOk}      </span>
-                        <span>{resultat.scoreBug}      </span>
-                        <span>{resultat.scorePc}</span>
-                        <span>{resultat.resultat}</span>
-                    </div>
-                    ))
-                }
+                                <tr className="resultatLigne">
+                                    <td class="resultatColonne">{resultat.date}</td>
+                                    <td class="resultatColonne">{resultat.scoreOk}</td>
+                                    <td class="resultatColonne">{resultat.scoreBug}</td>
+                                    <td class="resultatColonne">{resultat.scorePc}</td>
+                                    <td class="resultatColonne">{resultat.resultat}</td>
+                                </tr>
+                            ))
+                        }
+                    </tbody>
+                </table>
             </div>
         </div>
     );

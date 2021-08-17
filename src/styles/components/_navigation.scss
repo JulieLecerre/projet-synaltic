@@ -1,6 +1,8 @@
 .navigation {
-    margin:26px 0;
-    display: flex;
+    margin:76px;
+    position: relative;
+    left: 20px;
+    color: black;
 }
 
 a {
@@ -8,9 +10,9 @@ a {
     padding: 10px;
     position:relative;
     left: 310px;
+    cursor: pointer;
+    text-decoration: none;
 }
-
-
 
 .nav-active {
     &::after {

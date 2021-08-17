@@ -1,0 +1,24 @@
+.styleBouton {
+    margin-right: 20px;
+    background: none;
+    padding: 15px 18px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    width: 180px;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    cursor: pointer;
+    color:rgb(83, 81, 81);
+}
+
+.styleBouton:hover {
+    background-color:rgb(83, 81, 81);
+    color: white;
+    border-color:black
+}
+

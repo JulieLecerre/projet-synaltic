@@ -13,14 +13,24 @@ body {
   font-family: $font-1;
   color: black;
   background-color: rgb(247, 239, 239);
-
 }
 
-a {
-  text-decoration: none;
-  cursor: pointer;
-}
 a:visited {
   color:black;
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+  position: relative;
+  top: 20px;
+}
+
+p {
+  text-align: center;
+  margin-top: 50px;
 }
 
