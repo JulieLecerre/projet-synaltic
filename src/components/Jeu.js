@@ -83,7 +83,7 @@ class Jeu extends Component {     //on crée une classe Jeu qui hérite de la cl
             let scoreTmp=this.state.scoreOk+nombreAleatoire;
 
             if(scoreTmp+this.state.scoreBug>100){
-                scoreTmp=100-this.state.scoreBug-this.state.scoreOk+this.state.scoreOk;
+                scoreTmp=100-this.state.scoreOk-this.state.scoreBug+this.state.scoreOk;
             }
             this.setState({                              // pour mettre à jour la variable d'état, il faut passer par this.setState
                 scoreOk: scoreTmp
