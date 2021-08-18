@@ -13,14 +13,14 @@ class Jeu extends Component {     //on crée une classe Jeu qui hérite de la cl
                                
         
         
-        this.state = {                  // state est un dictionnaire contenant toutes les variables d'état, ici on crée une variable d'étéat score utilisateur que l'on initialise à 0
+        this.state = {                  // state est un dictionnaire contenant toutes les variables d'état, ici on crée une variable d'état score utilisateur que l'on initialise à 0
             scoreOk: 0,                 // state met à jour l'interface lorsque la valeur de la variable (les scores) changent
             scoreBug: 0,
             scorePc: 0,
             affichageResultat:"",
             historiqueDesActions:[]
         }
-        this.min_coderBien=5;           // On attribue la valeur 0. En faisant this.X je crée une variable pour la classe " Jeu", je peux donc réutiliser cette variable à n'importe quel moment. Si on ne met pas this, React sort de la fonction et détruit la variable
+        this.min_coderBien=5;           // En faisant this.X je crée une variable pour la classe " Jeu", je peux donc réutiliser cette variable à n'importe quel moment. Si on ne met pas this, React sort de la fonction et détruit la variable
         this.max_coderBien=10;
         this.min_coderViteOk=3;
         this.max_coderViteOk=13;
@@ -87,7 +87,7 @@ class Jeu extends Component {     //on crée une classe Jeu qui hérite de la cl
             }
             this.setState({                              // pour mettre à jour la variable d'état, il faut passer par this.setState
                 scoreOk: scoreTmp
-            });
+            }); 
 
             this.tourPc();
         }
